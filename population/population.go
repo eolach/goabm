@@ -6,16 +6,6 @@ import (
 	"github.com/eolach/goabm/ui/term"
 )
 
-// Agent defines independent behaviour
-type Agent interface {
-	Run()
-}
-
-// World represents space in which agend dwell and
-// interact. It update the state on each Tick()
-type World interface {
-	Tick() // mark the beginning of the next time period
-}
 
 // Main function
 func main() {
